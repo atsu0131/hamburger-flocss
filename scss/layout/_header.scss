@@ -149,10 +149,6 @@ button.c-button {
   .c-search__wrapper {
     margin-bottom: 5%;
   }
-  .batsu {
-    display: block;
-    visibility: visible;
-  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -168,6 +164,10 @@ button.c-button {
     right: -367px;
   }
   .c-menu__button {
+    visibility: visible;
+  }
+  .batsu {
+    display: block;
     visibility: visible;
   }
 }
