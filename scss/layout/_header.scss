@@ -8,15 +8,7 @@
 }
 
 .c-menu__button {
-  padding: 10px;
-  width: 50px;
-  margin-left: auto;
-  margin-right: 20px;
   visibility: hidden;
-  font-size: 34px;
-  font-weight: bold;
-  font-family: Roboto;
-  color: #707070;
 }
 
 .c-logo {
@@ -28,7 +20,8 @@
 
 .c-logo-search__wrapper {
   display: flex;
-  width: 95%;
+  width: 100%;
+  // width: 95%;
 }
 
 .c-search__wrapper {
@@ -38,6 +31,21 @@
   margin-left: auto;
 }
 
+.c-search__input {
+  position: relative;
+}
+
+.c-search__input::before {
+  content: ""; /* 疑似要素に必須 */
+  width: 30px; /* アイコンの横幅 */
+  height: 30px; /* アイコンの高さ */
+  background: url(../../img/megane.png) no-repeat center center / auto 100%; /* 背景にアイコン画像を配置 */
+  display: inline-block; /* 高さを持たせるためにインラインブロック要素にする */
+  position: absolute; /* 相対位置に指定 */
+  top: 6px; /* アイコンの位置。微調整してね */
+  left: 5px; /* アイコンの位置。微調整してね */
+}
+
 .c-search__input input {
   border: 1px solid;
   background-color: #fff;
@@ -45,6 +53,7 @@
   height: 46px;
   border-radius: 10px;
   font-size: 100%;
+  padding: 3px 0 3px 2em;
 }
 
 button.c-button {
@@ -55,6 +64,7 @@ button.c-button {
   color: #707070;
   border-radius: 10px;
   margin-left: 10px;
+  margin-right: 31px;
 }
 
 .p-sidemenu {
@@ -86,7 +96,7 @@ button.c-button {
 
 .p-main_visual p {
   color: #fff;
-  font-size: 3vw;
+  font-size: 36px;
   font-weight: bold;
   position: absolute;
   top: 30%;
@@ -123,20 +133,6 @@ button.c-button {
   right: 14%;
 }
 
-@media screen and (min-width: 1300px) {
-  .p-sidemenu {
-    // z-index: 900;
-    overflow: auto;
-    width: 367px;
-    height: 100%;
-    background: #f2ede9;
-    position: fixed;
-    top: 0;
-    right: 0;
-    text-align: center;
-  }
-}
-
 @media screen and (max-width: 1300px) {
   .c-logo-search__wrapper {
     display: block;
@@ -165,6 +161,14 @@ button.c-button {
   }
   .c-menu__button {
     visibility: visible;
+    padding: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: 70px;
+    font-size: 34px;
+    font-weight: bold;
+    font-family: Roboto;
+    color: #707070;
   }
   .batsu {
     display: block;
