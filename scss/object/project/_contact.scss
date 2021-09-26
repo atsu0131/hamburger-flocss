@@ -1,6 +1,6 @@
 .p-main {
   &__wrap {
-    width: calc(100% - 367px);
+    // width: calc(100% - 367px);
     background: #fffdfa;
     // height: 1447px;
     display: flex;
@@ -107,7 +107,7 @@
 }
 
 .p-map iframe {
-  width: calc(100% - 367px);
+  width: 100%;
 }
 
 .p-map__overlay {
@@ -156,16 +156,7 @@
   }
 }
 
-.is-overlay {
-  /*オーバーレイのCSS*/
-  position: fixed;
-  top: 0;
-  z-index: 100;
-  width: 100vw;
-  height: 100vh;
-  // display: none;
-  background: rgba(0, 0, 0, 0.6);
-}
+
 
 .c-footer__word {
   text-align: center;
