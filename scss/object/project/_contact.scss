@@ -22,6 +22,7 @@
       padding: 10px;
       font-size: 36px;
       font-weight: bold;
+      position: relative;
       &::after {
         content: "";
         width: 50px;
@@ -29,7 +30,7 @@
         display: inline-block;
         background-color: #fff;
         position: absolute;
-        bottom: 10px;
+        bottom: -10px;
       }
     }
     &__box__first {
@@ -61,6 +62,7 @@
       padding: 10px;
       font-size: 36px;
       font-weight: bold;
+      position: relative;
       &::after {
         content: "";
         width: 50px;
@@ -69,6 +71,7 @@
         background-color: #fff;
         position: absolute;
         bottom: 10px;
+        bottom: -10px;
       }
     }
     &__box__first {
@@ -202,12 +205,12 @@
       font-size: 41px;
     }
   }
-  .p-main__card__right > p::after {
-    bottom: 40px;
-  }
-  .p-main__card__left > p::after {
-    bottom: 40px;
-  }
+  // .p-main__card__right > p::after {
+  //   bottom: 40px;
+  // }
+  // .p-main__card__left > p::after {
+  //   bottom: 40px;
+  // }
 }
 
 @media screen and (max-width: 700px) {
@@ -245,12 +248,12 @@
   .p-main__card__right {
     margin: 0 auto;
   }
-  .p-main__card__right > p::after {
-    bottom: 200px;
-  }
-  .p-main__card__left > p::after {
-    bottom: -1000px;
-  }
+  // .p-main__card__right > p::after {
+  //   bottom: 200px;
+  // }
+  // .p-main__card__left > p::after {
+  //   bottom: -1000px;
+  // }
 }
 
 @media screen and (max-width: 500px) {
@@ -260,10 +263,10 @@
   .c-search__input input {
     padding: 3px 50px 3px 2em;
   }
-  .p-main__card__right > p::after {
-    bottom: -900px;
-  }
-  .p-main__card__left > p::after {
-    bottom: 300px;
-  }
+  // .p-main__card__right > p::after {
+  //   bottom: -900px;
+  // }
+  // .p-main__card__left > p::after {
+  //   bottom: 300px;
+  // }
 }
