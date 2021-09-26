@@ -4,8 +4,9 @@
     background: #fffdfa;
     // height: 1447px;
     display: flex;
-    margin-left: 111px;
-    margin-bottom: 5%;
+    // margin-left: 111px;
+    // margin-bottom: 5%;
+    justify-content: center;
   }
 
   &__card__left {
@@ -155,8 +156,6 @@
     color: white;
   }
 }
-
-
 
 .c-footer__word {
   text-align: center;
