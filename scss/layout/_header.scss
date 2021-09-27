@@ -82,6 +82,7 @@ button.c-button {
   color: #707070;
   text-align: left;
   margin: 0 10% 10% 20%;
+  margin: 0 10% 25% 20%;
 }
 
 h2 {
@@ -200,6 +201,9 @@ h2 {
   .main-off {
     width: 80%;
   }
+  .p-sidemenu {
+    width: 400px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -250,6 +254,9 @@ h2 {
     height: 100vh;
     // display: none;
     background: rgba(0, 0, 0, 0.6);
+  }
+  .c-menu {
+    visibility: hidden;
   }
 }
 

@@ -175,6 +175,9 @@
 }
 
 @media screen and (max-width: 1400px) {
+  .p-map__overlay {
+    width: 75%;
+  }
   .p-main_visual {
     height: 500px;
   }
@@ -206,12 +209,12 @@
   .c-search__input input {
     padding: 3px 90px 3px 2em;
   }
-  // .p-main__card__right > p::after {
-  //   bottom: 40px;
-  // }
-  // .p-main__card__left > p::after {
-  //   bottom: 40px;
-  // }
+  .p-main__card__right__box__first {
+    margin: 730px auto 5px auto;
+  }
+  .p-main__card__left__box__first {
+    margin: 730px auto 5px auto;
+  }
 }
 
 @media screen and (max-width: 700px) {
