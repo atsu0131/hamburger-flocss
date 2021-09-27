@@ -72,6 +72,7 @@ button.c-button {
   color: #707070;
   border-radius: 10px;
   margin: 0 15px 0 10px;
+  border: 1px solid;
 }
 
 .c-menu {
@@ -102,7 +103,7 @@ h2 {
 .p-sidemenu {
   z-index: 900;
   overflow: auto;
-  width: 500px;
+  width: 400px;
   height: auto;
   background: #f2ede9;
   // position: fixed;
@@ -148,6 +149,11 @@ h2 {
 //   top: 30%;
 //   left: 10%;
 // }
+
+.c-batsu {
+  width: 100%;
+  height: 50px;
+}
 
 .batsu {
   width: 50px; /*枠の大きさ*/
@@ -214,7 +220,7 @@ h2 {
     height: 2600px;
   }
   .main-off {
-    width: 60%;
+    width: 80%;
   }
   .c-menu__button {
     visibility: visible;
@@ -231,9 +237,9 @@ h2 {
     display: block;
     visibility: visible;
   }
-  .p-sidemenu {
-    width: 500px;
-  }
+  // .p-sidemenu {
+  //   width: 500px;
+  // }
   .is-overlay {
     /*オーバーレイのCSS*/
     position: fixed;
@@ -246,8 +252,14 @@ h2 {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .main-off {
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-off {
+    width: 40%;
   }
 }
