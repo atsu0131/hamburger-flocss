@@ -32,7 +32,7 @@
         display: inline-block;
         background-color: #fff;
         position: absolute;
-        bottom: -50px;
+        bottom: -25px;
       }
     }
     &__box__first {
@@ -73,7 +73,7 @@
         display: inline-block;
         background-color: #fff;
         position: absolute;
-        bottom: -50px;
+        bottom: -25px;
       }
     }
     &__box__first {
@@ -172,6 +172,7 @@
 .c-info {
   padding-top: 2%;
   margin-bottom: 2%;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -214,6 +215,11 @@
   }
   .p-main__card__left__box__first {
     margin: 730px auto 5px auto;
+  }
+  .c-info {
+    padding-top: 3%;
+    margin-bottom: 3%;
+    font-size: 20px;
   }
 }
 
@@ -291,6 +297,17 @@
   }
   .p-main_visual {
     height: 230px;
+  }
+  .p-map__overlay {
+    height: 70%;
+  }
+  .p-map__overlay__title::after {
+    bottom: -25px;
+  }
+  .c-info {
+    padding-top: 10%;
+    margin-bottom: 5%;
+    font-size: 20px;
   }
   // .p-main__card__right > p::after {
   //   bottom: -900px;
