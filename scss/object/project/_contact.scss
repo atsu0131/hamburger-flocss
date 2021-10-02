@@ -223,6 +223,14 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+  .c-info {
+    padding-top: 5%;
+    margin-bottom: 5%;
+    font-size: 20px;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .p-main {
     &__card__left {
@@ -283,6 +291,11 @@
   // .p-main__card__left > p::after {
   //   bottom: -1000px;
   // }
+  .c-info {
+    padding-top: 7%;
+    margin-bottom: 5%;
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 500px) {

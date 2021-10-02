@@ -51,7 +51,7 @@
   display: inline-block; /* 高さを持たせるためにインラインブロック要素にする */
   position: absolute; /* 相対位置に指定 */
   top: 6px; /* アイコンの位置。微調整してね */
-  left: 5px; /* アイコンの位置。微調整してね */
+  left: 8px; /* アイコンの位置。微調整してね */
 }
 
 .c-search__input input {
@@ -61,7 +61,7 @@
   height: 46px;
   border-radius: 10px;
   font-size: 100%;
-  padding: 3px 0 3px 2em;
+  padding: 3px 0 3px 2.5em;
 }
 
 button.c-button {
@@ -111,6 +111,7 @@ h2 {
   top: 0;
   right: 0;
   text-align: center;
+  transform: translateX(0px);
 }
 
 .p-main_visual {
@@ -186,6 +187,10 @@ h2 {
   right: 14%;
 }
 
+.c-animate {
+  transform: translateX(300px);
+}
+
 @media screen and (max-width: 1400px) {
   .c-logo-search__wrapper {
     display: block;
@@ -237,10 +242,12 @@ h2 {
     font-weight: bold;
     font-family: Roboto;
     color: #707070;
+    cursor: pointer;
   }
   .batsu {
     display: block;
     visibility: visible;
+    cursor: pointer;
   }
   // .p-sidemenu {
   //   width: 500px;

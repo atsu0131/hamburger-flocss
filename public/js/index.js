@@ -2,6 +2,9 @@ $(function () {
   $(".c-menu__button").on("click", function () {
     if ($(".p-sidemenu").hasClass("off")) {
       $(".p-sidemenu").removeClass("off");
+      $(".p-sidemenu").animate({
+        Left: "100px",
+      });
       $(".main").addClass("main-off");
       $("#overlay").addClass("is-overlay");
       // $("#overlay").fadeIn();
