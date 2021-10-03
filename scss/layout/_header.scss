@@ -108,10 +108,7 @@ h2 {
   height: auto;
   background: #f2ede9;
   // position: fixed;
-  top: 0;
-  right: 0;
   text-align: center;
-  transform: translateX(0px);
 }
 
 .p-main_visual {
@@ -187,10 +184,6 @@ h2 {
   right: 14%;
 }
 
-.c-animate {
-  transform: translateX(300px);
-}
-
 @media screen and (max-width: 1400px) {
   .c-logo-search__wrapper {
     display: block;
@@ -223,11 +216,16 @@ h2 {
   }
   .off {
     z-index: 900;
+    display: none;
+  }
+
+  .p-sidemenu {
+    top: 0;
     right: -500px;
     width: 367px;
     position: absolute;
-    height: 2600px;
-    display: none;
+    height: 2500px;
+    z-index: 900;
   }
   .main-off {
     width: 80%;
@@ -271,6 +269,15 @@ h2 {
   .main-off {
     width: 50%;
   }
+  .p-sidemenu {
+    height: 3500px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .p-sidemenu {
+    height: 3700px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -285,5 +292,13 @@ h2 {
   }
   .main-off {
     width: 40%;
+  }
+  .off {
+    top: 0;
+    right: -360px;
+    width: 367px;
+    position: absolute;
+    height: 3750px;
+    display: none;
   }
 }
