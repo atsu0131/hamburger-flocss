@@ -45,12 +45,12 @@
 
 .c-search__input::before {
   content: ""; /* 疑似要素に必須 */
-  width: 30px; /* アイコンの横幅 */
-  height: 30px; /* アイコンの高さ */
+  width: 25px; /* アイコンの横幅 */
+  height: 25px; /* アイコンの高さ */
   background: url(../../img/megane.png) no-repeat center center / auto 100%; /* 背景にアイコン画像を配置 */
   display: inline-block; /* 高さを持たせるためにインラインブロック要素にする */
   position: absolute; /* 相対位置に指定 */
-  top: 6px; /* アイコンの位置。微調整してね */
+  top: 8px; /* アイコンの位置。微調整してね */
   left: 8px; /* アイコンの位置。微調整してね */
 }
 
@@ -196,9 +196,9 @@ h2 {
   .c-search__wrapper {
     margin-bottom: 5%;
   }
-  .main-off {
-    width: 80%;
-  }
+  // .main-off {
+  //   width: 80%;
+  // }
   .p-sidemenu {
     width: 400px;
   }
@@ -224,12 +224,12 @@ h2 {
     right: -500px;
     width: 367px;
     position: absolute;
-    height: 2500px;
+    height: 2700px;
     z-index: 900;
   }
-  .main-off {
-    width: 80%;
-  }
+  // .main-off {
+  //   width: 80%;
+  // }
   .c-menu__button {
     visibility: visible;
     padding: 10px;
@@ -265,18 +265,36 @@ h2 {
   }
 }
 
-@media screen and (max-width: 800px) {
-  .main-off {
-    width: 50%;
-  }
+@media screen and (max-width: 1100px) {
   .p-sidemenu {
-    height: 3500px;
+    height: 2550px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .p-sidemenu {
+    height: 2500px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  // .main-off {
+  //   width: 50%;
+  // }
+  .p-sidemenu {
+    height: 2500px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .p-sidemenu {
+    height: 3700px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .p-sidemenu {
-    height: 3700px;
+    height: 3600px;
   }
 }
 
@@ -290,15 +308,24 @@ h2 {
   .p-main__visual__new img {
     height: 285px;
   }
-  .main-off {
-    width: 40%;
-  }
+  // .main-off {
+  //   width: 40%;
+  // }
   .off {
     top: 0;
     right: -360px;
     width: 367px;
     position: absolute;
-    height: 3750px;
+    height: 3900px;
     display: none;
+  }
+  .p-sidemenu {
+    height: 3700px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .p-sidemenu {
+    height: 3600px;
   }
 }
